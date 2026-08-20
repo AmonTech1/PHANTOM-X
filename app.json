@@ -1,0 +1,43 @@
+{
+  "name": "✧ PHANTOM-X PAIR ✧",
+  "description": "✧ SESSION ID GENERATOR FOR WHATSAPP BOTS ✧",
+  "logo": "https://i.ibb.co/PsWdw53t/phantom-x.jpg",
+  "repository": "https://github.com/ArslanMDofficial/PHANTOM-X-V2",
+  "keywords": ["✧ PHANTOM-X ✧", "whatsapp-bot", "pair-code"],
+  "success_url": "/",
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" }
+  ],
+  "env": {
+    "SESSION_ID": {
+      "description": "✧ Your Bot Session ID ✧",
+      "value": "PHANTOM-X",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "✧ MongoDB Connection String ✧",
+      "value": "mongodb+srv://offarslan_db_user:arslanmd@cluster0.xrqkzwg.mongodb.net/?appName=Cluster0",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "✧ Bot Owner WhatsApp Number ✧",
+      "value": "254759006509",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "✧ Command Prefix ✧",
+      "value": ".",
+      "required": false
+    },
+    "WORK_TYPE": {
+      "description": "✧ Bot Mode (public/private/group/inbox) ✧",
+      "value": "public",
+      "required": false
+    },
+    "MESSAGE": {
+      "description": "✧ Message Attached With Session ID ✧",
+      "value": "✦ MADE BY PHANTOM-X OFFICIAL ✦",
+      "required": false
+    }
+  }
+}
